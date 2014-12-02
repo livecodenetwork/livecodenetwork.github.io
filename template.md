@@ -5,6 +5,10 @@ author:
   - Author two, University of elsewhere, <algo@rave.ac.uk>
 ...
 
+# ICLC 2014 template - WORK IN PROGRESS
+
+Do not use (yet)!
+
 ## Abstract
 
 Around 100-150 word abstract goes here.
