@@ -1,0 +1,114 @@
+---
+title: 'Your paper title goes here'
+author:
+  - Author one, University of somewhere, <one@roulette.mx>
+  - Author two, University of elsewhere, <algo@rave.ac.uk>
+abstract: |
+  Replace this text with a 100-250 word abstract. You'll find it in the
+  'metadata block' at the top of your markdown document), be sure that
+  each line of the abstract is indented.
+fontsize: 11pt
+geometry: margin=1in
+fontfamily: libertine
+mainfont: Linux Libertine O
+bibliography: references.bib
+...
+
+# Introduction
+
+Welcome to the markdown (aka commonmark) template for the first
+International Conference on Live Coding, 2015.
+
+This document is a guide to using markdown for the conference, which
+is itself written in markdown. For full understanding, refer to
+template.txt to see the markdown source, and template.pdf to see the
+typeset output.
+
+We suggest you take a copy of template.txt source, and use it as a
+starting point for your ICLC paper.
+
+It is unusual for a conference to ask for papers to be created in this
+markdown format. We have done so to enable us to make proceedings
+available both in PDF files suitable for print, and in HTML suitable
+for the web. This is important for making sure your paper is fully
+accessible, via Internet search, and with assistive technology such as
+screen readers for blind people.
+
+**If you do not wish to learn markdown, please do not be discouraged
+from submitting your paper**, there is also a word document template
+available.
+
+# Learning and using markdown
+
+We realise learning new technology takes time, but we are happy to
+answer any questions you have. This is best done via our online
+community forum:
+  [http://lurk.org/groups/lcrn/](http://lurk.org/groups/lcrn/)
+
+Alternatively you may email the conference chairs directly:
+  [livecodenet@gmail.com](mailto:livecodenet@gmail.com)
+
+## Running pandoc {#pandoc}
+
+Pandoc is software which turns text written in markdown into a
+beautiful looking document, complete with references. You will need to
+run it to create PDF documents of your paper for checking and
+uploading for submission.
+
+You may download pandoc for all major operating systems (including MS
+Windows, Apple Mac OS and GNU/Linux) from the following website:
+[http://johnmacfarlane.net/pandoc/](http://johnmacfarlane.net/pandoc/)
+
+To render your markdown source as HTML to view in your web browser,
+use the following command from a terminal window:
+
+~~~
+pandoc --template=pandoc/iclc.html --filter pandoc-citeproc \
+   --number-sections iclc2015.txt -o iclc2015.html
+~~~
+
+The above assumes you have your bibliography stored in file called
+references.bib, using the BibTeX format. Pandoc also supports EndNote,
+RIS and other formats, just change the filename in the above command
+accordingly.
+
+To produce a PDF instead, you can use the following:
+
+~~~
+pandoc --template=pandoc/iclc.latex --filter pandoc-citeproc \
+   --number-sections iclc2015.txt -o iclc2015.pdf
+~~~
+
+## Bibliographic references
+
+When making bibliographic references, authors may be referenced
+inline, e.g. @Schwitters32 wrote the Ursonate sound poem, or in
+parenthesis, e.g. Ursonate is a sound poem [@Schwitters32]. Multiple
+references should be grouped together like so
+[@Schwitters32;@Miller56;@Greenewalt46].
+
+The pandoc command given in the [above section](#pandoc) will automatically
+render your references according to Chicago author-date style.
+
+## Figures
+
+Images should be included as figures, with captions provided and
+formatted as shown below:
+
+![*A descriptive caption should be given for all figures, understandable without reference to the rest of the article.*](images/pomeroy.jpg)
+
+The size of the image on the page may be set by editing the image file
+itself. For photographs, please provide a resolution of at least 300
+DPI. Be prepared for the page layout and image size to be changed
+during the print design process, and consider this when refering to
+the figures in the text.
+
+# Conclusion
+
+Again, if you have any questions or problems, please share them on the forum:
+  http://lurk.org/groups/lcrn/
+
+Or email the conference organisers directly:
+  livecodenet@gmail.com
+
+# References
