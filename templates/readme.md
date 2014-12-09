@@ -8,9 +8,10 @@ There are two templates available, in *markdown* (also known as
 This is the recommended format, as it allows us to publish accepted
 papers both as PDF with print layout, and online as a webpage.
 
-You create markdown documents by writing in plain text, with simple
-formatting markup. For more information please refer to the template
-itself, which is [iclc2015.md](iclc2015.md).
+You create markdown documents by writing a text file, with simple
+markup to specify formatting, citations and the inclusion of images in
+a standard way. For more information please refer to the template
+itself, which is [iclc2015.txt](iclc2015.txt).
 
 ## Microsoft word template
 
