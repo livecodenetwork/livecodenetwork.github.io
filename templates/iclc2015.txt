@@ -100,7 +100,7 @@ formatted as shown below:
 The size of the image on the page may be set by editing the image file
 itself. For photographs, please provide a resolution of at least 300
 DPI. Be prepared for the page layout and image size to be changed
-during the print design process, and consider this when refering to
+during the print design process, and consider this when referring to
 the figures in the text.
 
 # Conclusion
