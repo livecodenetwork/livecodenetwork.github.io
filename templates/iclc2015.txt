@@ -72,7 +72,10 @@ references.bib, using the BibTeX format. Pandoc also supports EndNote,
 RIS and other formats, just change the filename in the above command
 accordingly.
 
-To produce a PDF instead, you can use the following:
+To produce a PDF instead, you can use the following, although you will
+need LaTeX installed (see
+[http://johnmacfarlane.net/pandoc/installing.html](http://johnmacfarlane.net/pandoc/installing.html) for where to get it
+from).
 
 ~~~
 pandoc --template=pandoc/iclc.latex --filter pandoc-citeproc \
