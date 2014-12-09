@@ -21,7 +21,7 @@ International Conference on Live Coding, 2015.
 
 This document is a guide to using markdown for the conference, which
 is itself written in markdown. For full understanding, refer to
-template.txt to see the markdown source, and template.pdf to see the
+iclc2015.txt to see the markdown source, and iclc2015.pdf to see the
 typeset output.
 
 We suggest you take a copy of template.txt source, and use it as a
