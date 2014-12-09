@@ -1,17 +1,21 @@
 # International Conference on Live Coding - guidelines and templates
 
-# Markdown / commonmark
+There are two templates available, in *markdown* (also known as
+*commonmark*) format, and microsoft word.
 
-This is the recommended format, as it allows us to publish acceoted papers both as PDF with print layout, and online as a webpage.
+## Markdown / commonmark
 
-You create markdown documents by writing in plain text, with simple formatting markup. For example to italicise text, you surround it with asterixes, \*like this\*.
+This is the recommended format, as it allows us to publish accepted
+papers both as PDF with print layout, and online as a webpage.
 
-For information about software you can use to make editing markdown straightforward, as well as instructions on how to do easy bibliographic referencing, please refer to the template itself.
+You create markdown documents by writing in plain text, with simple
+formatting markup. For more information please refer to the template
+itself, which is [iclc2015.md](iclc2015.md).
 
-# Libreoffice/openoffice
+## Microsoft word template
 
-Papers submitted using this format will be published in the proceedings in PDF form, but not on the web in HTML. The template comes in the form of an ODF document, where you replace the example text with that of your paper.
-
-# Microsoft word template
-
-Papers submitted using this format will be published in the proceedings in PDF form, but not on the web in HTML. The template comes in the form of a word document, where you replace the example text with that of your paper.
+This is for people without the time or energy to invest in learning
+how to use markdown template. Papers submitted using the Microsoft
+Word template will be published in the proceedings in PDF form, but
+not on the web in HTML. The template comes in the form of a word
+document, where you replace the example text with that of your paper.
