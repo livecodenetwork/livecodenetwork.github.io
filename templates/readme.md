@@ -19,4 +19,4 @@ This is for people without the time or energy to invest in learning
 how to use markdown template. Papers submitted using the Microsoft
 Word template will be published in the proceedings in PDF form, but
 not on the web in HTML. The template comes in the form of a word
-document, where you replace the example text with that of your paper.
+document, where you replace the example text with that of your paper. The template is [iclc2015.docx](iclc2015.docx).
