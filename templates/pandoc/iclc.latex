@@ -4,11 +4,8 @@ This is a pandoc template and should not be edited.
 
 $endif$
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-$if(fontfamily)$
-\usepackage{$fontfamily$}
-$else$
-\usepackage{lmodern}
-$endif$
+
+\usepackage{pandoc/iclc}
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -17,6 +14,13 @@ $endif$
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  $if(fontfamily)$
+  \usepackage{$fontfamily$}
+  \usepackage{inconsolata}
+  $else$
+  \usepackage{lmodern}
+  $endif$
+
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
 $if(euro)$
@@ -141,7 +145,14 @@ $if(title)$
 \title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
 $endif$
 $if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
+\author{
+$for(author)$
+  $author.name$ \\
+  $author.affiliation$\\
+  \href{mailto:$author.email$}{$author.email$}
+  $sep$ \and 
+$endfor$
+}
 $endif$
 \date{$date$}
 $for(header-includes)$
